@@ -164,11 +164,18 @@ export default function Home() {
             <div className="space-y-8 sm:space-y-12">
               {[
                 {
-                  year: "2020",
+                  year: "2019",
                   role: "Senior Frontend Engineer",
                   company: "HotBox",
                   description: "Engineered complex RESTFUL API endpoints and collaborates with frontend engineers",
-                  tech: ["Java", "Springboot","GCP"],
+                  tech: ["Java", "Springboot","GCP","RabbitMQ","AWS"],
+                },
+                  {
+                  year: "2021",
+                  role: "Full Stack Developer",
+                  company: "Oshegez Telecom,",
+                  description: "Developed payment infrastructure and merchant-facing dashboard features.",
+                  tech: ["Ruby", "React", "PostgreSQL"],
                 },
 
                 {
@@ -176,23 +183,9 @@ export default function Home() {
                   role: "Software Engineer",
                   company: "Remote",
                   description: "Collaborated with frontend engiineers to design mobile application that crawl fashion",
-                  tech: ["ReactJS", "Ionic", "Docker"],
+                  tech: ["ReactJS", "Ionic", "Docker","WordPress"],
                 },
 
-                {
-                  year: "2021",
-                  role: "Full Stack Developer",
-                  company: "Stripe",
-                  description: "Developed payment infrastructure and merchant-facing dashboard features.",
-                  tech: ["Ruby", "React", "PostgreSQL"],
-                },
-                {
-                  year: "2019",
-                  role: "Software Engineer",
-                  company: "Airbnb",
-                  description: "Created booking flow optimizations and host management tools.",
-                  tech: ["React", "Node.js", "MySQL"],
-                },
               ].map((job, index) => (
                 <div
                   key={index}
@@ -280,7 +273,7 @@ export default function Home() {
                     <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
 
                     <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                      <span>Read more</span>
+                       
                       <svg
                         className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                         fill="none"
@@ -317,7 +310,7 @@ export default function Home() {
                     href="mailto:test@example.com"
                     className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
                   >
-                    <span className="text-base sm:text-lg">test@example.com</span>
+                    <span className="text-base sm:text-lg">akindutire33@gmail.com</span>
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"
@@ -338,7 +331,7 @@ export default function Home() {
                 {[
                   { name: "GitHub", handle: "@akindutireayomide", url: "#" },
                   { name: "v0.dev", handle: "@akindutireayomide", url: "#" },
-                  { name: "HubSpot Community", handle: "@akindutireayomide", url: "#" },
+                  { name: "HubSpot Community", handle: "@akindutireayomide", url: "https://github.com/akindutire" },
                   { name: "LinkedIn", handle: "akindutireayomide", url: "#" },
                 ].map((social) => (
                   <Link
