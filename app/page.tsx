@@ -273,7 +273,7 @@ export default function Home() {
                     <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
 
                     <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                       
+                       <span>Read more</span>
                       <svg
                         className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                         fill="none"
@@ -325,13 +325,13 @@ export default function Home() {
             </div>
 
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-sm text-muted-foreground font-mono">ELSEWHERE</div>
+              <div className="text-sm text-muted-foreground font-mono">Let's Create Magic</div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: "GitHub", handle: "@akindutireayomide", url: "#" },
+                  { name: "GitHub", handle: "@akindutireayomide", url: "https://github.com/akindutire" },
                   { name: "v0.dev", handle: "@akindutireayomide", url: "#" },
-                  { name: "HubSpot Community", handle: "@akindutireayomide", url: "https://github.com/akindutire" },
+                  { name: "Twitter", handle: "@akindutireayomide", url: "#" },
                   { name: "LinkedIn", handle: "akindutireayomide", url: "#" },
                 ].map((social) => (
                   <Link
@@ -407,7 +407,6 @@ export default function Home() {
           </div>
         </footer>
       </main>
-
       <div className="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
     </div>
   )
